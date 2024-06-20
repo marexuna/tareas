@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+    background-image: url(ffff.jpg); /* Reemplaza 'foto.jpg' con la ruta correcta a tu imagen */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ajusta este valor para cambiar el nivel de transparencia */
+    z-index: -1;
+}
+
+.titulo-viajes {
+    font-size: 10em;
+    font-family: 'Brush Script MT', cursive; /* Fuente de estilo manuscrito */
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #0ddee5;
+    z-index: 2;
+}
+
+.task-box {
+    padding: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+#mostrarFormulario {
+    width: 200px; 
+    padding: 10px;
+    font-size: 16px; 
+    border: none;
+    background-color: #fffafa;
+    color: rgb(3, 3, 3); 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario {
+    display: none;
+    background-color: rgb(207, 189, 138);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 2;
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+#listaTareas {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    column-width: 250px; /* Establece el ancho de las columnas */
+    column-gap: 20px; /* Espacio entre las columnas */
+    padding: 0;
+    list-style-type: none;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+
+  
+    align-items: center;
+  
+}
+
+#listaTareas li {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Para asegurar que las tareas se comporten como elementos en bloque en la columna */
+    width: 250px;
+    max-width: 300px;
+    box-sizing: border-box;
+    break-inside: avoid-column; /* Evita que los elementos se rompan entre columnas */
+    z-index: 2;
+}
+
+.botones-tarea {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.botones-tarea button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones-tarea .editar {
+    background-color: #f39c12;
+    color: white;
+}
+
+.botones-tarea .borrar {
+    background-color: #e74c3c;
+    color: white;
+}

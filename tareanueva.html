@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevas tareas</title>
+    <link rel="stylesheet" href="tareanueva.css">
+</head>
+<body>
+    <div class="titulo-viajes">
+        Viajes
+    </div>
+    <div class="task-box">
+        <button id="mostrarFormulario">Tarea nueva</button>
+    </div>
+    
+    <div class="formulario" id="formularioTarea">
+        <h2>Formulario de Tarea</h2>
+        <form id="formTarea">
+            <label for="tituloTarea">Título de la tarea:</label><br>
+            <input type="text" id="tituloTarea" name="tituloTarea" required><br><br>
+            
+            <label for="fechaTarea">Fecha de la tarea:</label><br>
+            <input type="date" id="fechaTarea" name="fechaTarea" required><br><br>
+            
+            <label for="descripcionTarea">Descripción de la tarea:</label><br>
+            <textarea id="descripcionTarea" name="descripcionTarea" rows="4" required></textarea><br><br>
+            
+            <button type="submit" id="btnAgregar">Agregar</button>
+            <button type="button" id="btnCerrar">Cerrar</button>
+        </form>
+    </div>
+
+    <ul id="listaTareas">
+        <!-- Aquí se mostrarán las tareas agregadas -->
+    </ul>
+    <script src="tareanueva.js"></script>
+</body>
+</html>
+
+
